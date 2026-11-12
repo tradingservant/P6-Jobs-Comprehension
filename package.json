@@ -1,0 +1,11 @@
+{
+  "name": "p6-jobs-comprehension",
+  "private": true,
+  "description": "Static one-station Primary 6 reading practice: Bright Days Job Fair.",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/pack.test.js tests/browser.test.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.15.0"
+  }
+}
