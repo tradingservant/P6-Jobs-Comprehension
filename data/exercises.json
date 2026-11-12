@@ -1,0 +1,402 @@
+{
+  "pack_id": "Bright_Days_Job_Fair",
+  "title": "Bright Days Job Fair",
+  "title_zh": "Bright Days 招聘會閱讀理解",
+  "spelling": "British",
+  "student_direction_language": "zh-Hant",
+  "item_language": "en",
+  "scoring": {
+    "storage": "in-memory only",
+    "login": false,
+    "attempt_rule": "On the first wrong attempt, show the first-error hint and allow at least one retry. Record first_correct if the first submission is fully correct; record hinted_success if the item becomes fully correct only after a hint. A later wrong retry is marked incorrect after the explanatory feedback is shown.",
+    "gap_marking": "Trim leading/trailing space and ignore letter case. Accept only a word from the word bank (one word per blank). A word may be used only once. Do not accept extra words or a different word from the advertisements unless listed under accepted.",
+    "word_bank_scheme": "Q6 shows a word bank. The pupil drags a word into each blank or selects it from a list. Each bank word may be used only once. Q6 is a display group (scored: false); the two scored items are Q06a and Q06b.",
+    "pictures": "No item requires a picture to answer. The advertisements stay visible while the pupil answers. A speech-bubble drawing may be used for Tom in Q5, but the question is answerable from the given text alone. Do not carry the source paper's blue highlight on 'calm down scared animals' into the pupil passage."
+  },
+  "stations": [
+    {
+      "id": "bright-days",
+      "order": 1,
+      "title": "Bright Days Job Fair",
+      "title_zh": "Bright Days 招聘會",
+      "passage_id": "bright-days-passage",
+      "passage_always_visible": true,
+      "also_keep_visible": [
+        "dictionary_box_Q03",
+        "profile_Q05",
+        "word_bank_Q06"
+      ],
+      "student_stem_en": "Peter is at a job fair with his father. Read the job advertisements carefully, choose the best answers for Questions 1–5 and complete Question 6.",
+      "student_stem_zh": "Peter 正與父親參加招聘會。請細心閱讀招聘廣告，選出第 1 至 5 題的最合適答案，並完成第 6 題。",
+      "items": [
+        {
+          "id": "Q01",
+          "source_number": 2,
+          "type": "mcq_combination",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "To be a writer for Kids’ Post, you need to ______.",
+          "statements": [
+            {
+              "id": 1,
+              "text": "know what children like",
+              "supported_by": "lines 4–5: familiar with what children aged 7 to 12 like",
+              "ticked_on_source_paper": true
+            },
+            {
+              "id": 2,
+              "text": "be creative",
+              "supported_by": "line 7: have lots of interesting ideas",
+              "ticked_on_source_paper": true
+            },
+            {
+              "id": 3,
+              "text": "be good at English",
+              "supported_by": "lines 4–5: good at English",
+              "ticked_on_source_paper": true
+            },
+            {
+              "id": 4,
+              "text": "be able to work fast",
+              "supported_by": "line 6: be able to meet tight deadlines (we publish every day)",
+              "ticked_on_source_paper": false
+            }
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "1 and 3 only"
+            },
+            {
+              "id": "B",
+              "text": "1 and 2 only"
+            },
+            {
+              "id": "C",
+              "text": "All of the above"
+            },
+            {
+              "id": "D",
+              "text": "1, 2 and 4"
+            }
+          ],
+          "accepted": [
+            "C"
+          ],
+          "source_key_letter": "D",
+          "teacher_note": "The source paper ticked statements 1–3 only, but the circled choice was D, All of the above. Keep that key. Statement 4 is supported, a little loosely, by 'meet tight deadlines (we publish every day)'.",
+          "hints": {
+            "first_error": "逐一核對四項陳述是否能在「Writer for Kids’ Post」的廣告裏找到根據。不要只看已寫出來的「good at English」和「children like」，也要想想截止日期和 interesting ideas 分別支持哪一項。"
+          },
+          "feedback": {
+            "correct": "Yes. A writer needs to know what children like, be creative, be good at English, and be able to work fast, so all four statements are needed.",
+            "incorrect_after_retry": "The answer is C, All of the above. Statement 1 is supported by 'familiar with what children aged 7 to 12 like' (lines 4–5). Statement 2 is supported by 'have lots of interesting ideas' (line 7). Statement 3 is supported by 'good at English' (lines 4–5). Statement 4 is supported by 'meet tight deadlines (we publish every day)' (line 6)."
+          },
+          "explanation": "Combination MCQ. Key remains All of the above, as on the source paper, even though only statements 1–3 were ticked there."
+        },
+        {
+          "id": "Q02",
+          "source_number": 1,
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "To work at Rainbow Youth Centre, you need to be ______.",
+          "options": [
+            {
+              "id": "A",
+              "text": "outgoing"
+            },
+            {
+              "id": "B",
+              "text": "creative"
+            },
+            {
+              "id": "C",
+              "text": "hard-working"
+            },
+            {
+              "id": "D",
+              "text": "strong"
+            }
+          ],
+          "accepted": [
+            "B"
+          ],
+          "source_key_letter": "D",
+          "hints": {
+            "first_error": "只看 Rainbow Youth Centre 的廣告。廣告要求你為孩子的菜單想出甚麼？另外，There is no need to cook or carry heavy pots and pans 那一句可以排除一個常見的誤選。"
+          },
+          "feedback": {
+            "correct": "Yes. The cook’s assistant must come up with new ideas for kids’ menus, so you need to be creative.",
+            "incorrect_after_retry": "The answer is B, creative (lines 18–19). D is a trap: the ad says there is no need to cook or carry heavy pots and pans, so you do not need to be strong. A and C are not mentioned in this advertisement."
+          },
+          "explanation": "Quality required at Rainbow Youth Centre, with a 'no need to…' line ruling out strong."
+        },
+        {
+          "id": "Q03",
+          "source_number": 3,
+          "type": "dictionary_sense",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。作答時請同時查看詞典義項框。",
+          "stem": "Under the advertisement for 'Vet’s Assistant', what does the word 'calm' mean?",
+          "keep_visible": "dictionary_box_Q03",
+          "target_word": "calm",
+          "target_context": "You need to be patient so that you can calm down scared animals. (line 15)",
+          "glossary": [
+            {
+              "sense": 1,
+              "pos": "adj",
+              "definition": "relaxed and quiet, not angry or upset",
+              "example": "Please stay calm — firefighters will arrive soon to get you out of here."
+            },
+            {
+              "sense": 2,
+              "pos": "adj",
+              "definition": "a sea, lake etc that is calm has only gentle waves",
+              "example": "Grandpa loves sitting by the calm lake."
+            },
+            {
+              "sense": 3,
+              "pos": "n",
+              "definition": "a situation or time that is quiet and peaceful",
+              "example": "They sit on the bench and enjoy the calm of the evening."
+            },
+            {
+              "sense": 4,
+              "pos": "v",
+              "definition": "to make someone become quiet and relaxed",
+              "example": "He tried to calm the frightened children."
+            }
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "2"
+            },
+            {
+              "id": "C",
+              "text": "3"
+            },
+            {
+              "id": "D",
+              "text": "4"
+            }
+          ],
+          "accepted": [
+            "D"
+          ],
+          "source_key_letter": "A",
+          "teacher_note": "The source paper marked A (sense 1, adjective). The online key is D (sense 4, verb), as confirmed on 2026-11-12, because the advertisement uses the phrasal verb 'calm down'. Do not show this disagreement to pupils.",
+          "hints": {
+            "first_error": "先判斷廣告裏的 calm 是形容詞、名詞還是動詞。句子是 you can calm down scared animals，想想是誰對動物做這件事。不要一看到 calm 就選「保持冷靜」的形容詞。"
+          },
+          "feedback": {
+            "correct": "Yes. In 'calm down scared animals', calm is a verb meaning to make someone become quiet and relaxed (sense 4).",
+            "incorrect_after_retry": "The answer is D, sense 4. The assistant must make scared animals quiet and relaxed. Sense 1 is an adjective meaning relaxed yourself, not making others calm. Sense 2 is also an adjective (a calm lake). Sense 3 is a noun (the calm of the evening)."
+          },
+          "explanation": "Dictionary item: the correct sense must match both part of speech and meaning in context. The verb in 'calm down scared animals' matches sense 4, not the adjective in sense 1."
+        },
+        {
+          "id": "Q04",
+          "source_number": 5,
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "According to the advertisements, which one of the following is true?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To be a cook’s assistant, you need to cook well."
+            },
+            {
+              "id": "B",
+              "text": "To be a vet’s assistant, you need to be brave and patient."
+            },
+            {
+              "id": "C",
+              "text": "To be a writer, you need to be between 7 and 12 years old."
+            },
+            {
+              "id": "D",
+              "text": "To be a photographer, you need to be understanding."
+            }
+          ],
+          "accepted": [
+            "B"
+          ],
+          "source_key_letter": "D",
+          "hints": {
+            "first_error": "逐一對照四則廣告。注意：7 至 12 歲是讀者的年齡，不是應徵者的年齡；廚師助理廣告寫了 There is no need to cook。"
+          },
+          "feedback": {
+            "correct": "Yes. The vet’s assistant must be patient and must not be afraid of big animals, so he or she needs to be brave and patient.",
+            "incorrect_after_retry": "The answer is B (lines 15–16): the assistant must be patient and not afraid of big animals. A is false: there is no need to cook (lines 20–21). C is a trap: 7 to 12 is the age of the newspaper’s readers, not the writer (lines 4{ND}5). D is not mentioned in the photographer advertisement."
+          },
+          "explanation": "True/false according to the ads. Classic audience-age trap for the writer, and a 'no need to cook' trap for the cook's assistant."
+        },
+        {
+          "id": "Q05",
+          "source_number": 4,
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。只須根據文字作答，不必看圖。",
+          "stem": "Which is a suitable job for Tom?",
+          "keep_visible": "profile_Q05",
+          "profile_text": "Hi, I’m Tom. I’m interested in plants and animals and I love the great outdoors. I always take my camera with me when I go hiking.",
+          "profile_note": "A speech-bubble drawing may be used in the layout, but the question is answerable from this text alone. Do not add clues that the text does not already give.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vet’s assistant"
+            },
+            {
+              "id": "B",
+              "text": "Cook’s assistant at Rainbow Youth Centre"
+            },
+            {
+              "id": "C",
+              "text": "Part-time photographer for Kids’ Weekly"
+            },
+            {
+              "id": "D",
+              "text": "Writer for Kids’ Post"
+            }
+          ],
+          "accepted": [
+            "C"
+          ],
+          "source_key_letter": "B",
+          "hints": {
+            "first_error": "把 Tom 說的每一點（plants and animals、the great outdoors、camera、hiking）逐一對照四則廣告，找出最吻合的一份工作。喜歡動物並不一定等於最適合做獸醫助理。"
+          },
+          "feedback": {
+            "correct": "Yes. The part-time photographer needs to take outstanding photos, be creative and love nature. Tom loves the outdoors and always takes his camera when he goes hiking.",
+            "incorrect_after_retry": "The answer is C, Part-time photographer for Kids’ Weekly (lines 8{ND}10). Tom loves the great outdoors and always takes his camera hiking, which matches 'outstanding photos' and 'love nature'. A is tempting because he likes animals, but the vet’s job is in Central, Mondays to Fridays, and does not use a camera. B and D do not match the camera or the outdoors."
+          },
+          "explanation": "Person-to-job match. The camera + outdoors + nature cluster points to the photographer, not the vet, even though Tom also likes animals."
+        },
+        {
+          "id": "Q06",
+          "source_number": 6,
+          "type": "note_display_group",
+          "scored": false,
+          "marks": 0,
+          "direction_en": "Peter is writing an e-mail to Grace about his dream job. Finish the e-mail and use only ONE word for each blank. Choose each word from the word bank. You may use each word only once.",
+          "direction_zh": "Peter 正在寫一封電郵給 Grace，講述他的理想工作。請完成這封電郵，每個空格只可用一個單詞，並須從選字欄選出。每個詞語只可用一次。",
+          "keep_visible": "word_bank_Q06",
+          "word_bank": [
+            "patient",
+            "creative",
+            "outstanding",
+            "interesting",
+            "familiar"
+          ],
+          "word_bank_rule": "Each word may be used only once. Words are taken from the advertisements. Display the bank while the e-mail is on screen.",
+          "note_title": "Peter’s e-mail",
+          "note_lines": [
+            "Hi Grace,",
+            "I saw an advertisement today about a job for a cook’s assistant. The job doesn’t involve cooking – just thinking of new kids’ menu ideas. As you know, I like food and I am (i) ________. I can always think of yummy new dishes. I also read a lot of books about food and health. I am (ii) ________ with what to eat to stay healthy.",
+            "Do you think I should apply for the job?",
+            "Write soon.",
+            "Peter"
+          ],
+          "blanks": [
+            {
+              "id": "Q06a",
+              "blank_number": 1,
+              "label": "(i)",
+              "accepted": [
+                "creative"
+              ]
+            },
+            {
+              "id": "Q06b",
+              "blank_number": 2,
+              "label": "(ii)",
+              "accepted": [
+                "familiar"
+              ]
+            }
+          ],
+          "teacher_note": "Word bank added at teacher request; the source paper had no bank. Keys are unchanged from the marked paper: (i) creative (ii) familiar."
+        },
+        {
+          "id": "Q06a",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "Q06",
+          "blank_number": 1,
+          "label": "(i)",
+          "teacher_review": false,
+          "direction_en": "Peter is writing an e-mail to Grace about his dream job. Finish the e-mail and use only ONE word for each blank. Choose each word from the word bank.",
+          "accepted": [
+            "creative",
+            "Creative",
+            "CREATIVE"
+          ],
+          "acceptable_notes": "Case-insensitive. The word creative is in the photographer advertisement and is also supported by 'come up with new ideas for kids' menus' / 'think of yummy new dishes'. Do not accept interesting or outstanding.",
+          "hints": {
+            "first_error": "第 (i) 格在 I am 後面，形容 Peter 的特質。後面一句是 I can always think of yummy new dishes。想一想廚師助理廣告要求你為菜單做甚麼，選字欄哪一個詞最合適。"
+          },
+          "feedback": {
+            "correct": "Yes. Peter can think of yummy new dishes, so he is creative.",
+            "incorrect_after_retry": "The word is creative. The cook’s assistant must come up with new ideas for kids’ menus (lines 18{ND}19), and the photographer advertisement also uses the word creative (lines 9{ND}10). Interesting and outstanding do not fit 'I am ________' as well here."
+          }
+        },
+        {
+          "id": "Q06b",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "Q06",
+          "blank_number": 2,
+          "label": "(ii)",
+          "teacher_review": false,
+          "direction_en": "Peter is writing an e-mail to Grace about his dream job. Finish the e-mail and use only ONE word for each blank. Choose each word from the word bank.",
+          "accepted": [
+            "familiar",
+            "Familiar",
+            "FAMILIAR"
+          ],
+          "acceptable_notes": "Case-insensitive. The pattern is 'familiar with', which also appears in the writer advertisement. Do not accept patient or interesting.",
+          "hints": {
+            "first_error": "第 (ii) 格在 I am 和 with what to eat 之間。廣告裏哪一個詞會與 with 連用？選字欄裏找出可以填進 'I am ________ with…' 的那個詞。"
+          },
+          "feedback": {
+            "correct": "Yes. Peter is familiar with what to eat to stay healthy.",
+            "incorrect_after_retry": "The word is familiar (lines 4–5: familiar with what children aged 7 to 12 like). The same pattern, familiar with, fits 'I am familiar with what to eat to stay healthy.'"
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "source": "Bright Days Job Fair paper (pages 13–14 plus Question 6). This is an online version of the source paper, not an original rewrite.",
+    "order_changes": "Question order and some option orders are slightly changed; correct content is unchanged except Q3 (see q3_key_decision).",
+    "q3_key_decision": "Source paper marked A (sense 1, adjective). Confirmed 2026-11-12: use sense 4 (verb), because the advertisement uses the phrasal verb 'calm down scared animals'.",
+    "q6_word_bank": "Added at teacher request. The source paper had free one-word gaps with no bank. Keys unchanged: (i) creative (ii) familiar.",
+    "repo_name": "P6-Jobs-Comprehension",
+    "do_not_merge_or_enable_pages": true,
+    "do_not_fold_into": "P6A_Comprehenion_Exam",
+    "scored_item_ids": [
+      "Q01",
+      "Q02",
+      "Q03",
+      "Q04",
+      "Q05",
+      "Q06a",
+      "Q06b"
+    ],
+    "total_scored_items": 7,
+    "handwritten_annotations_omitted": [
+      "Student date '29nd September, 2025'",
+      "Handwritten 'helper' above Cook's Assistant",
+      "Blue highlight on 'calm down scared animals'"
+    ]
+  }
+}
